@@ -16,7 +16,9 @@ No variables
 Dependencies
 ------------
 
-None
+ruby
+ruby-dev
+rubygems
 
 Example Playbook
 ----------------
