@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-scout_realtime }
+         - { role: cowops.debian-scout_realtime }
 
 Tasks
 -----
