@@ -1,10 +1,13 @@
 ---
 - name: install gems package
-  apt: pkg={{ item }} state=latest
-  with_items:
-    - ruby
-    - ruby-dev
-    - rubygems
+  apt:
+    name: {{ packages }}
+    state: latest
+  vars:
+    packages:
+      - ruby
+      - ruby-dev
+      - rubygems
 
 - name: install scout_realtime
   gem: name={{ item }} state=latest user_install=no
